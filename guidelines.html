@@ -23,7 +23,7 @@
   }
   main { max-width: 680px; margin: 0 auto; }
   .pass {
-    position: relative; display: grid; grid-template-columns: 22px 1fr 72px; gap: 12px;
+    position: relative; display: grid; grid-template-columns: 22px 1fr 84px; gap: 12px;
     margin: 6px 0 16px; padding: 8px 10px 8px 0; border-radius: 26px;
     background: linear-gradient(135deg, #202637 0%, #55364A 56%, #B82F68 100%);
     color: #fff; box-shadow: 0 16px 36px rgba(32,38,55,.22); overflow: hidden;
@@ -38,11 +38,10 @@
   .pass-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
   .chip { font-size: 11px; font-weight: 700; padding: 5px 9px; border-radius: 999px; background: rgba(255,255,255,.14); color: #fff; }
   .coin {
-    position: relative; z-index: 1; align-self: center; width: 56px; height: 56px; margin-right: 8px;
-    border-radius: 50%; border: 3px solid #ffd970;
-    background: radial-gradient(circle at 34% 28%, #fff9c9, #F4B63E 58%, #D98B18);
-    color: #fff8d6; font-weight: 900; font-size: 22px; display: grid; place-items: center;
-    box-shadow: 0 8px 16px rgba(184,120,0,.28);
+    position: relative; z-index: 1; align-self: center;
+    width: 72px; height: 62px; margin: 0 6px 0 0;
+    object-fit: contain;
+    filter: drop-shadow(0 6px 8px rgba(174,91,0,.38));
   }
   section {
     background: var(--card); border: 1px solid var(--line); border-radius: 18px;
@@ -74,7 +73,7 @@
         <span class="chip">Operator · Fitto</span>
       </div>
     </div>
-    <div class="coin" aria-hidden="true">F</div>
+    <img class="coin" src="fcoin-single.png" alt="F Coin" width="72" height="62">
   </header>
 
   <section>

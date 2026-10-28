@@ -33,7 +33,7 @@
   .pass {
     position: relative;
     display: grid;
-    grid-template-columns: 22px 1fr 72px;
+    grid-template-columns: 22px 1fr 84px;
     gap: 12px;
     align-items: stretch;
     margin: 6px 0 16px;
@@ -88,17 +88,11 @@
     position: relative;
     z-index: 1;
     align-self: center;
-    width: 56px; height: 56px;
-    margin-right: 8px;
-    border-radius: 50%;
-    border: 3px solid #ffd970;
-    background: radial-gradient(circle at 34% 28%, #fff9c9, #F4B63E 58%, #D98B18);
-    color: #fff8d6;
-    font-weight: 900;
-    font-size: 22px;
-    display: grid;
-    place-items: center;
-    box-shadow: 0 8px 16px rgba(184,120,0,.28);
+    width: 72px;
+    height: 62px;
+    margin: 0 6px 0 0;
+    object-fit: contain;
+    filter: drop-shadow(0 6px 8px rgba(174,91,0,.38));
   }
   .facts {
     display: grid;
@@ -216,7 +210,7 @@
         <span class="chip">Operator · Fitto</span>
       </div>
     </div>
-    <div class="coin" aria-hidden="true">F</div>
+    <img class="coin" src="fcoin-single.png" alt="F Coin" width="72" height="62">
   </header>
 
   <div class="facts">
