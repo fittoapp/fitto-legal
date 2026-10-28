@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Privacy Policy · Fitto</title>
+<style>
+  :root {
+    --paper: #FFF6FA;
+    --ink: #202637;
+    --muted: #716170;
+    --berry: #B82F68;
+    --rose: #EA5B92;
+    --blush: #F9C7DA;
+    --pink: #F7A8C9;
+    --lav: #E8DDF8;
+    --mint: #DDF3E7;
+    --gold: #F4B63E;
+    --line: #F0E4EB;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--ink);
+    font: 15px/1.65 ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    background:
+      radial-gradient(circle at 92% 6%, rgba(247,168,201,.38), transparent 26%),
+      radial-gradient(circle at 4% 42%, rgba(232,221,248,.5), transparent 28%),
+      linear-gradient(155deg, #FFF6FA, #fff 48%, #F7F3FF);
+    padding: max(18px, env(safe-area-inset-top)) 16px max(36px, env(safe-area-inset-bottom));
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  .pass {
+    position: relative;
+    display: grid;
+    grid-template-columns: 22px 1fr 72px;
+    gap: 12px;
+    align-items: stretch;
+    margin: 6px 0 16px;
+    padding: 8px 10px 8px 0;
+    border-radius: 26px;
+    background: linear-gradient(135deg, #202637 0%, #55364A 56%, #B82F68 100%);
+    color: #fff;
+    box-shadow: 0 16px 36px rgba(32,38,55,.22);
+    overflow: hidden;
+  }
+  .pass:before {
+    content: "";
+    position: absolute;
+    width: 120px; height: 120px;
+    right: -28px; top: -38px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.12);
+  }
+  .ring-col {
+    display: grid;
+    place-items: center;
+    width: 22px;
+  }
+  .ring {
+    width: 14px; height: 14px;
+    border: 3px solid #F9C7DA;
+    border-radius: 50%;
+    background: rgba(255,255,255,.16);
+    box-shadow: 0 0 0 4px rgba(32,38,55,.35);
+  }
+  .pass-copy { position: relative; z-index: 1; padding: 16px 4px 16px 6px; }
+  .kicker {
+    display: block;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    color: var(--blush);
+  }
+  h1 {
+    margin: 6px 0 8px;
+    font-size: 28px;
+    line-height: 1.12;
+    letter-spacing: -0.03em;
+  }
+  .lede { margin: 0; max-width: 34em; color: #F8DDEC; font-size: 13px; }
+  .pass-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 14px;
+  }
+  .chip {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 9px;
+    border-radius: 999px;
+    background: rgba(255,255,255,.14);
+    color: #fff;
+  }
+  .coin {
+    position: relative;
+    z-index: 1;
+    align-self: center;
+    width: 56px; height: 56px;
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 3px solid #ffd970;
+    background: radial-gradient(circle at 34% 28%, #fff9c9, #F4B63E 58%, #D98B18);
+    color: #fff8d6;
+    font-weight: 900;
+    font-size: 22px;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 8px 16px rgba(184,120,0,.28);
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .facts article {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 12px 10px;
+    text-align: center;
+    box-shadow: 0 8px 22px rgba(78,51,67,.06);
+  }
+  .facts b { display: block; color: var(--berry); font-size: 13px; }
+  .facts span { display: block; margin-top: 3px; color: var(--muted); font-size: 11px; }
+  toc {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+    box-shadow: 0 8px 22px rgba(78,51,67,.06);
+  }
+  toc p {
+    margin: 0 0 8px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    color: var(--berry);
+  }
+  toc ol { margin: 0; padding: 0; list-style: none; columns: 2; column-gap: 12px; }
+  toc li { padding: 4px 0; break-inside: avoid; }
+  toc a { color: var(--ink); text-decoration: none; font-size: 13px; font-weight: 700; }
+  toc a:hover { color: var(--berry); }
+  section {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 16px 16px 16px 18px;
+    margin-bottom: 11px;
+    box-shadow: 0 8px 22px rgba(78,51,67,.06);
+    scroll-margin-top: 12px;
+  }
+  section.rail { border-left: 4px solid var(--rose); background: linear-gradient(145deg, #fff, #FFF6FA); }
+  h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 8px;
+    font-size: 17px;
+  }
+  .tag {
+    flex: none;
+    min-width: 34px;
+    height: 22px;
+    padding: 0 7px;
+    border-radius: 999px;
+    background: #FDE8F1;
+    color: var(--berry);
+    font-size: 10px;
+    font-weight: 800;
+    display: grid;
+    place-items: center;
+  }
+  p { margin: 0 0 8px; color: var(--muted); }
+  p:last-child { margin-bottom: 0; }
+  ul { margin: 8px 0 0; padding: 0 0 0 18px; color: var(--muted); }
+  li { margin: 4px 0; }
+  strong { color: var(--ink); }
+  .callout {
+    margin-top: 10px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #FDE8F1, #E8DDF8);
+    color: #55364A;
+    font-size: 13px;
+  }
+  footer {
+    text-align: center;
+    margin-top: 22px;
+    color: var(--muted);
+    font-size: 12px;
+  }
+  footer em {
+    display: inline-block;
+    margin-bottom: 6px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: #FFF1CE;
+    color: #8A5A12;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: .12em;
+  }
+  @media (max-width: 420px) {
+    .facts { grid-template-columns: 1fr; }
+    toc ol { columns: 1; }
+    h1 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="pass">
+    <div class="ring-col"><i class="ring"></i></div>
+    <div class="pass-copy">
+      <span class="kicker">STUDIO PASS · FITTO</span>
+      <h1>Privacy Policy</h1>
+      <p class="lede">How training records, F Coins, and official coach chats stay on this device.</p>
+      <div class="pass-meta">
+        <span class="chip">Effective October 2026</span>
+        <span class="chip">Operator · Fitto</span>
+      </div>
+    </div>
+    <div class="coin" aria-hidden="true">F</div>
+  </header>
+
+  <div class="facts">
+    <article><b>On this device</b><span>Records stay local</span></article>
+    <article><b>Tap to permit</b><span>Camera, Photos, Mic</span></article>
+    <article><b>Not sold</b><span>No data marketplace</span></article>
+  </div>
+
+  <toc>
+    <p>ON THIS PASS</p>
+    <ol>
+      <li><a href="#who">Who operates Fitto</a></li>
+      <li><a href="#info">Information we use</a></li>
+      <li><a href="#use">How it is used</a></li>
+      <li><a href="#permissions">Permissions</a></li>
+      <li><a href="#purchases">Purchases</a></li>
+      <li><a href="#community">Community content</a></li>
+      <li><a href="#choices">Your choices</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </toc>
+
+  <section id="who">
+    <h2><span class="tag">Fitto</span> Who operates Fitto</h2>
+    <p>Fitto (“Fitto”, “we”) operates this app. The operator name is <strong>Fitto</strong>. This policy describes training, nutrition, and community features that run on your iPhone.</p>
+    <p>Fitto is a local training studio: workout logs, body metrics, questions, and F Coin entitlements are stored on this device. Fitto does not create an Apple ID, email, or password account.</p>
+  </section>
+
+  <section id="info" class="rail">
+    <h2><span class="tag">Local</span> Information we use</h2>
+    <p>Depending on the features you use, Fitto may store:</p>
+    <ul>
+      <li>Profile details you enter (display name, username, bio, and an optional photo)</li>
+      <li>Workout lists, actual sets, rest length, training frequency, and history</li>
+      <li>Height, weight, and BMI calculated on this device</li>
+      <li>Questions, comments, saved questions, and official coach chat messages</li>
+      <li>Photos, videos, or voice notes you attach after you tap Camera, Photos, or Voice</li>
+      <li>F Coin balance, welcome grant, confirmed spends, and App Store product receipts kept in a local ledger</li>
+      <li>Reports, blocked names, and community-safety choices</li>
+    </ul>
+    <p>Fitto does not collect IDFA and does not use App Tracking Transparency.</p>
+  </section>
+
+  <section id="use">
+    <h2><span class="tag">Use</span> How it is used</h2>
+    <p>Fitto uses this information to save your training, show BMI and weight history, unlock paid videos, courses, and meal guides after a confirmed spend, and keep official coach conversations on this device.</p>
+    <p>Fitto does <strong>not</strong> sell personal information. Fitto does not share training or chat content with a third-party AI service.</p>
+  </section>
+
+  <section id="permissions" class="rail">
+    <h2><span class="tag">Tap</span> Permissions</h2>
+    <p><strong>Camera</strong> is requested only when you tap Take Photo or Camera, to capture a profile picture or a training photo or video for official coach chat.</p>
+    <p><strong>Photos</strong> is requested only when you tap Choose from Photos or Photo Library.</p>
+    <p><strong>Microphone</strong> is requested only when you tap Voice message in official coach chat.</p>
+    <p><strong>Notifications</strong> may be requested when the app becomes active so Fitto can remind you about training. You can refuse any permission and keep using the rest of the app.</p>
+    <div class="callout">Refusing Camera, Photos, or Microphone never blocks Enter, logging sets, or browsing Q&amp;A. Those tools stay unused until you tap them.</div>
+  </section>
+
+  <section id="purchases">
+    <h2><span class="tag">Coins</span> Purchases</h2>
+    <p>F Coins are consumable in-app purchases processed by Apple. Packs are identified as <strong>com.fitto.app.lv1</strong> through <strong>com.fitto.app.lv6</strong>. Fitto records a local ledger of grants and spends. Duplicate App Store callbacks are applied once.</p>
+    <p>Unlocking a form video, premium course, or meal guide spends F Coins only after you confirm. Previewing a lesson is free. Remaining F Coins are lost if you Delete Account on this device.</p>
+  </section>
+
+  <section id="community" class="rail">
+    <h2><span class="tag">Q&amp;A</span> Community content</h2>
+    <p>Questions, comments, and official coach messages are user-generated content stored locally for the features you use. You can report content, block a name, and review Community Guidelines inside the app.</p>
+    <p>Direct messages are limited to official coaches. Other members cannot open a private chat with you.</p>
+  </section>
+
+  <section id="choices">
+    <h2><span class="tag">You</span> Your choices</h2>
+    <p><strong>Log Out</strong> ends the local session and returns to Enter. Training records, questions, and F Coins stay on this device.</p>
+    <p><strong>Clear all data</strong> removes local training and purchase data while leaving you signed in until you also leave the session.</p>
+    <p><strong>Delete Account</strong> permanently removes the local session and wipes records, media, questions, entitlements, and remaining F Coins on this device.</p>
+  </section>
+
+  <section id="contact" class="rail">
+    <h2><span class="tag">Help</span> Contact</h2>
+    <p>Complaints, privacy questions, and safety reports: open Settings → Help &amp; Support inside Fitto. Operator name is <strong>Fitto</strong>.</p>
+    <p>Fitto is not intended for children who cannot understand these terms. Training and nutrition material is educational and does not replace medical care.</p>
+  </section>
+
+  <footer>
+    <em>FITTO</em>
+    <p>Privacy Policy · October 2026 · Operator: Fitto</p>
+  </footer>
+</main>
+</body>
+</html>
